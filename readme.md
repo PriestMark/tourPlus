@@ -10,3 +10,13 @@ JWT_SECRET='enter here with your secret phrase'
 JWT_EXPIRES_IN=90d
 JWT_COOKIE_EXPIRES_IN=90
 ```
+***Mailing setup (mailtrap and sendgrig):***
+```
+EMAIL_USERNAME=your_username
+EMAIL_PASSWORD=your_password
+EMAIL_HOST=smtp.mailtrap.io
+EMAIL_PORT=2525
+
+SG_USERNAME=apikey
+SG_PASSWORD=token(actual apikey)
+```
