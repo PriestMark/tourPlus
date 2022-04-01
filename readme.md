@@ -1,14 +1,12 @@
-NODE_ENV=development
-PORT=3000
-DATABASE=mongodb+srv://admin0:<PASSWORD>@cluster0.9m6tz.mongodb.net/natours?retryWrites=true&w=majority
-DATABASE_LOCAL=mongodb://localhost:27017/natours
-DATABASE_PASSWORD=+DkBJphTv8*GcN8
 
-JWT_SECRET=my-ultra-secure-and-ultra-long-secret
+***Essential for app to work is to create config.env file with next fields:***
+'''
+NODE_ENV=development '(delete-this-text: in case you need to setup different env, make sure to make a code changes. Currently supports development, all other will be treated as prod)'
+PORT=enter-your-desired-port-here
+DATABASE='connection string to your DB'
+DATABASE_PASSWORD='mongo DB password'
+
+JWT_SECRET='enter here with your secret phrase'
 JWT_EXPIRES_IN=90d
 JWT_COOKIE_EXPIRES_IN=90
-
-EMAIL_USERNAME=a124458539192a
-EMAIL_PASSWORD=1e3caf48074eba
-EMAIL_HOST=smtp.mailtrap.io
-EMAIL_PORT=25
+'''
